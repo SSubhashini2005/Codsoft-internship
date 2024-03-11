@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhashini S - Web Developer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            position: relative;
+        }
+
+        #profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f0e2e2;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            color: #333;
+        }
+
+        .project-image {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            background-color: #f0e2e2;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .resume-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .resume-link:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-size: 2.5em; margin-bottom: 0.3em;">Subhashini S 🚀</h1>
+        <p style="font-size: 1.2em; margin: 0;">Web Developer 🌐</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Home 🏠</h2>
+        <!-- ... (content for the Home section) ... -->
+    </section>
+
+    <section id="about">
+        <h2>About Me 🙋‍♀</h2>
+        <p> Hello! I'm Subhashini, a dedicated and creative web developer with a passion for crafting delightful digital experiences. I thrive on turning innovative ideas into reality through clean and efficient code.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience 🚀</h2>
+        <p>Participated in coding events, showcasing my expertise in problem-solving and algorithmic thinking.</p>
+        <hr>
+        <p>Completed various certified online courses to stay updated with the latest technologies and best practices.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills 🛠</h2>
+        <img class="skill" src="skill.png" alt="skill1">
+        <p>HTML5 💻</p>
+        <p>CSS 🎨</p>
+        <p>JavaScript 🚀</p>
+        <p>React ⚛</p>
+        <p>Node.js 🌐</p>
+        <!-- Add more skills as needed -->
+    </section>
+
+    <section id="projects">
+        <h2>Projects 💼</h2>
+        <div class="project">
+            <img class="project-image" src="p1.jpg" alt="Project 1">
+            <h3>Project 1: Smart App Development 📱🤖</h3>
+            <p>Designed and implemented a cutting-edge mobile application leveraging the latest AI technologies to enhance user experiences.</p>
+        </div>
+        <div class="project">
+            <img class="project-image" src="p2.jpg" alt="Project 2">
+            <h3>Project 2: Data Visualization Platform 📊📈</h3>
+            <p>Developed a platform for visualizing complex data sets through interactive charts and graphs, providing valuable insights to users.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="resume">
+        <h2>Resume 📄</h2>
+        <a href="path/to/your/resume.pdf" class="resume-link" target="_blank">View My Resume</a>
+    </section>
+    <section id="contact">
+        <h2>Contact Me📞</h2>
+        <p>E-mail:subhashini2085@gmail.com</p>
+        <p>contact:9988776655</p> 
+    </section>
+
+    <footer>
+        <p style="margin: 0;">&copy; 2024 Subhashini S. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
