@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSoft Internship Project 🚀</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3298dc; /* Blue theme background color */
+            color: #000000; /* Light text color on blue background */
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #2c3e50; /* Darker blue header */
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        section.hero {
+            height: 100vh;
+            background: url('Internship.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: bottom;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4081a1;
+            color: #ecf0f1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #1f618d;
+        }
+
+        section.contact {
+            background-color: #d8c2c2;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        label {
+            margin-top: 15px;
+            display: block;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 15px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+        }
+
+        button {
+            grid-column: span 2;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #da9191;
+            color: #d60d0d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #20bd04;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #a43d3d;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="welcomeMessage">CodeSoft Internship Project 🌟</h1>
+        <p>Your journey to innovation begins here 🚀</p>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Our World 🌐</h2>
+        <p>Explore the endless possibilities of coding and software development 🖥.</p>
+        <a href="#contact" class="cta-button">Get in Touch 📞</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us 📬</h2>
+        <p id="welcomeText">Have questions or want to join our internship program? Reach out to us! 🤝</p>
+        <form>
+            <label for="name"><strong>Name:</strong></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone"><strong>Phone:</strong></label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="university"><strong>University:</strong></label>
+            <input type="text" id="university" name="university" required>
+
+            <label for="major"><strong>Major:</strong></label>
+            <input type="text" id="major" name="major" required>
+
+            <label for="resume"><strong>Resume (PDF):</strong></label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+            <label for="message"><strong>Why do you want to join CodeSoft?</strong></label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="updateWelcomeMessage()">Apply Now 🚀</button>
+        </form>
+
+        <img src="code-image.jpg" alt="CodeSoft Workspace 🚀">
+    </section>
+
+    <!-- Project Section -->
+    <section class="projects">
+        <h2>Internship Projects 🚀</h2>
+
+        <!-- Project 1 -->
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
+            <p id="project1Title"><strong>Smart App Development</strong></p>
+            <p id="project1Desc">Develop a cutting-edge mobile application that leverages the latest technologies in artificial intelligence. You'll be involved in designing intuitive user interfaces and implementing advanced AI algorithms to enhance user experience.</p>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
+            <p id="project2Title"><strong>Data Visualization Platform</strong></p>
+            <p id="project2Desc">Join our team to create an interactive data visualization platform. You'll work with large datasets, implementing engaging visualizations and exploring innovative ways to present complex information.</p>
+        </div>
+
+        <!-- Add more projects as needed -->
+
+    </section>
+
+    <footer>
+        &copy; 2024 CodeSoft Internship. All rights reserved. 🌐
+    </footer>
+
+    <script>
+        function updateWelcomeMessage() {
+            const userName = document.getElementById('name').value;
+            const userEmail = document.getElementById('email').value;
+            const userPhone = document.getElementById('phone').value;
+
+            const welcomeMessage = Welcome to CodeSoft, ${userName}! 🌟;
+            const contactMessage = Have questions or want to join our internship program, ${userName}? Reach out to us at ${userEmail} or ${userPhone}! 🤝;
+
+            document.getElementById('welcomeMessage').innerText = welcomeMessage;
+            document.getElementById('welcomeText').innerText = contactMessage;
+
+            // Display project descriptions after applying
+            document.getElementById('projectDescriptions').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
